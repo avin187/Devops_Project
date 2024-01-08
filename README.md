@@ -33,3 +33,4 @@ This project streamlines CI/CD for a static website: Git-based version control, 
     * Static Website
 * Collaboration:
     * Integrating multiple technologies for an end-to-end CI/CD pipeline.
+ 
