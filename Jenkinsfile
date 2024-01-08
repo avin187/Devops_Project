@@ -10,7 +10,7 @@ pipeline {
 
     stage('Build and Package') {
       steps {
-        script {
+        script { 
           // Docker build and package steps
         }
       }
