@@ -6,12 +6,14 @@ pipeline {
       steps {
         checkout scm
       }
-    }
+  }
 
-    stage('Build and Package') {
+  stage('Build and Package') {
       steps {
-        script { 
-          // Docker build and package steps
+        script {
+          // Your Docker build and package steps here
+          echo "Executing Docker build and package steps..."
+          // Add your Docker build and package commands here
         }
       }
     }
