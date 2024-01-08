@@ -34,3 +34,7 @@ This project streamlines CI/CD for a static website: Git-based version control, 
 * Collaboration:
     * Integrating multiple technologies for an end-to-end CI/CD pipeline.
  
+# My Process
+1. First, I established a Git repository called "Devops_Project" and linked my VSCode to my GitHub account. Subsequently, I commenced editing and testing the README.md file before initializing the folder.
+2. I established an AWS free-tier account. I then began setting a budget of £0.01 to prevent any accidental expenses. Following this, I created an EC2 instance, crafting my first server named "Jenkins-Server". I also generated a .pem key for secure SSH access, altering the server's authorized_keys file with my personal id_rsa.pub key.
+3. Next, I installed JDK 17 and Jenkins on the server. I initiated the Jenkins setup and included port 8080 in the AWS security settings for server access.
