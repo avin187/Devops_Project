@@ -1,0 +1,19 @@
+- name: Configure and Deploy Nginx
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Copy Nginx configuration
+      copy:
+        src: nginx/nginx.conf
+        dest: /etc/nginx/nginx.conf
+
+    - name: Restart Nginx
+      service:
+        name: nginx
+        state: restarted

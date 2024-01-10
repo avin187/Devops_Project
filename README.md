@@ -39,4 +39,4 @@ This project streamlines CI/CD for a static website: Git-based version control, 
 2. I established an AWS free-tier account. I then began setting a budget of £0.01 to prevent any accidental expenses. Following this, I created an EC2 instance, crafting my first server named "Jenkins-Server". I also generated a .pem key for secure SSH access, altering the server's authorized_keys file with my personal id_rsa.pub key.
 3. Next, I installed JDK 17 and Jenkins on the server. I initiated the Jenkins setup and included port 8080 in the AWS security settings for server access.
 4. I'm currently in the process of crafting my Jenkinsfile, incorporating essential foundational code for fundamental functionality. Following that, I will establish a comprehensive pipeline and configure the requisite Jenkins credentials.
-5. Jenkins Pipeline and webhooks all set up now and 
+5. Jenkins Pipeline and webhooks are working. Setup successfully!

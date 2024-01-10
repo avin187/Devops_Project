@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: your-static-website
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: your-static-website
+  template:
+    metadata:
+      labels:
+        app: your-static-website
+    spec:
+      containers:
+      - name: your-static-website
+        image: nginx:latest  # Update with your Docker image name
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: your-static-website
+spec:
+  selector:
+    app: your-static-website
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
