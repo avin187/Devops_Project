@@ -8,12 +8,22 @@ pipeline {
       }
     }
 
+    stage('Check Docker') {
+      steps {
+        script {
+          // Check Docker installation and version
+          sh 'docker --version'
+          sh 'docker info'
+        }
+      }
+    }
+
     stage('Build and Package') {
       steps {
         script {
           // Docker build and package steps
-         sh 'cd docker && docker build -t your-static-website .'
-        }s
+          sh 'cd docker && docker build -t your-static-website .'
+        }
       }
     }
 
