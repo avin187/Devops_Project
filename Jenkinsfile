@@ -12,8 +12,8 @@ pipeline {
       steps {
         script {
           // Docker build and package steps
-          sh 'docker build -t your-static-website .'
-        }
+         sh 'cd docker && docker build -t your-static-website .'
+        }s
       }
     }
 
