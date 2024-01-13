@@ -31,7 +31,7 @@ pipeline {
       steps {
         script {
           // Run Terraform scripts
-          sh 'cd terraform && terraform init && terraform apply -auto-approve'
+          sh 'cd terraform && terraform init && terraform apply -auto-approve | tee terraform_apply.log'
         }
       }
     }
